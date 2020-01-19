@@ -225,7 +225,6 @@ io.on('connection', (socket) => {
       for (const client of room.sockets) {
         client.emit(data);
       }
-    }
   });
   
   /**
