@@ -218,13 +218,13 @@ io.on('connection', (socket) => {
         client.emit('initGame');
       }
     }
-  });
 
   socket.on('event', (data) => {
     const room = rooms[socket.roomId];
       for (const client of room.sockets) {
         client.emit(data);
       }
+    }
   });
   
   /**
