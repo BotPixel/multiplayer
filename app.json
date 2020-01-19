@@ -1,7 +1,7 @@
 {
-  "name": "Node.js Socket.io Multiplayer example",
+  "name": "BotPixel Server",
   "description": "A Very simple multiplayer server intended to be used with the hyperPad socket.io multiplayer example",
-  "repository": "https://github.com/hyperPad/multiplayerServerExample",
+  "repository": "https://github.com/BotPixel/multiplayer",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": [
     "node",
