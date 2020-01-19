@@ -220,6 +220,14 @@ io.on('connection', (socket) => {
     }
   });
 
+  socket.on('event', (data) => {
+    const room = rooms[socket.roomId];
+      for (const client of room.sockets) {
+        client.emit(data);
+      }
+    }
+  });
+  
   /**
    * The game has started! Give everyone their default values and tell each client
    * about each player
